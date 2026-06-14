@@ -1,0 +1,400 @@
+/* Hamburger icon */
+.menu-btn { cursor: pointer; font-size: 25px; color: #ffffff; }
+
+/* Side Menu Panel */
+.side-menu {
+    height: 100%; width: 0; position: fixed; z-index: 1000; top: 0; left: 0;
+    background: rgba(255, 255, 255, 0.1); /* Glass color */
+    backdrop-filter: blur(15px); /* Blur effect */
+    overflow-x: hidden; transition: 0.5s; padding-top: 60px;
+}
+
+.side-menu ul { list-style: none; padding: 20px; }
+.side-menu a { color: white; text-decoration: none; display: block; padding: 10px; }
+.sub-categories li { padding: 8px 30px; color: #ff4757; }
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background: rgba(52, 3, 3, 0.9);
+    top: 0;
+    z-index: 999;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin: 0 auto;
+    padding: 0;
+    position: static;
+    transform: none;
+}
+
+/*.navbar ul {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}*/
+
+.navbar ul a {
+    font-size: 18px !important;
+    text-decoration: none !important;
+    color: #FF4757 !important;
+    font-family: 'Cinzel Decorative', cursive !important;
+    letter-spacing: 2px;
+}
+
+.logo {
+  color: #FF4757;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+}
+
+/* img boxes styling*/
+.box {
+  width: calc(50% - 15px);
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
+  flex-shrink: 1;
+  aspect-ratio: 9 / 16;
+}
+
+.actions {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.btn-download {
+  background: #ff0000;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+body {
+  background-image: url('backgroundimg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+/* Image IDs */
+#box1 { background-image: url("img1.jpg"); }
+#box2 { background-image: url("img2.jpg"); }
+#box3 { background-image: url("img3.jpg"); }
+#box4 { background-image: url("img4.jpg"); }
+#box5 { background-image: url("img5.jpg"); }
+#box6 { background-image: url("img6.jpg"); }
+#box7 { background-image: url("img7.jpg"); }
+#box8 { background-image: url("img8.jpg"); }
+#box9 { background-image: url("img9nature.jpg"); }
+#box10 { background-image: url("img10.jpg"); }
+#box11{ background-image: url("img11.jpg"); }
+#box12 { background-image: url("img12.jpg"); }
+#box13 { background-image: url("img13.jpg"); }
+#box14 { background-image: url("img14.jpg"); }
+#box15 { background-image: url("img15.jpg"); }
+#box16 { background-image: url("img16.jpg"); }
+#box17 { background-image: url("img17.jpg"); }
+#box18 { background-image: url("img18.jpg"); }
+#box19 { background-image: url("img19.jpg"); }
+#box20 { background-image: url("img20.jpg"); }
+#box21 { background-image: url("imgspace21.jpg"); }
+#box22 { background-image: url("img22.jpg"); }
+#box23 { background-image: url("img23.jpg"); }
+#box24 { background-image: url("img24.jpg"); }
+#box25 { background-image: url("img25.jpg"); }
+#box26 { background-image: url("img26.jpg"); }
+#box27 { background-image: url("img27.jpg"); }
+#box28 { background-image: url("img28.jpg"); }
+#box29 { background-image: url("img29.jpg"); }
+#box30 { background-image: url("img30.jpg"); }
+#box31 { background-image: url("img31.jpg"); }
+#box32 { background-image: url("img32.jpg"); }
+#box33 { background-image: url("imgcartoons33.jpg"); }
+#box34 { background-image: url("img34.jpg"); }
+#box35 { background-image: url("img35.jpg"); }
+#box36 { background-image: url("img36.jpg"); }
+#box37 { background-image: url("img37.jpg"); }
+#box38 { background-image: url("img38.jpg"); }
+#box39 { background-image: url("img39.jpg"); }
+#box40 { background-image: url("img40.jpg"); }
+#box41 { background-image: url("img41.jpg"); }
+#box42 { background-image: url("img42.jpg"); }
+#box43 { background-image: url("img43.jpg"); }
+#box44 { background-image: url("img44.jpg"); }
+#box45 { background-image: url("imgaesthetic45.jpg"); }
+
+#box46 { background-image: url("img46.jpg"); }
+#box47 { background-image: url("img47.jpg"); }
+#box48 { background-image: url("img48.jpg"); }
+#box49 { background-image: url("img49.jpg"); }
+#box50 { background-image: url("img50.jpg"); }
+#box51 { background-image: url("img51.jpg"); }
+#box52 { background-image: url("img52.jpg"); }
+#box53 { background-image: url("img53.jpg"); }
+#box54 { background-image: url("img54.jpg"); }
+#box55 { background-image: url("img55.jpg"); }
+#box56 { background-image: url("img56.jpg"); }
+
+
+/* About Page */
+.about-container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: white;
+}
+
+.about-container h2 {
+    color: #FF4757;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.about-container h3 {
+    color: #FF4757;
+    margin-top: 20px;
+}
+
+.about-container p {
+    color: #cccccc;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.about-container ul {
+    color: #cccccc;
+    line-height: 2;
+    padding-left: 20px;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 20px;
+    background: #FF4757;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+}
+
+/* ============================================
+   RESPONSIVE CSS — style.css ke end mein add karo
+   Purana responsive code pehle hata do
+   ============================================ */
+
+/* ===== DESKTOP — 1024px se upar ===== */
+@media (min-width: 1024px) {
+
+    /* Navbar */
+    .navbar {
+        padding: 15px 60px;
+    }
+
+    .navbar ul {
+        gap: 40px;
+    }
+
+    .navbar ul a {
+        font-size: 18px !important;
+        text-decoration: none;
+        color: #FF4757;
+    }
+
+    /* Header */
+    header h1 {
+        font-size: 72px !important;
+        letter-spacing: 6px !important;
+        padding: 20px 0;
+    }
+
+    /* Wallpaper container — 4 columns */
+    #container {
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 25px;
+        padding: 30px;
+        justify-content: center;
+    }
+
+    /* Boxes — desktop size */
+    .box {
+        width: 220px !important;
+        height: 370px !important;
+    }
+
+    /* About container */
+    .about-container {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 40px;
+        font-size: 16px;
+    }
+
+    /* Footer */
+    footer > div:first-child {
+        max-width: 1000px !important;
+        padding: 30px 60px !important;
+    }
+
+    footer > div:last-child {
+        max-width: 1000px !important;
+        padding: 0 60px !important;
+    }
+}
+
+/* ===== TABLET — 768px to 1024px ===== */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    /* Navbar */
+    .navbar {
+        padding: 15px 30px;
+    }
+
+    .navbar ul {
+        gap: 25px;
+    }
+
+    .navbar ul a {
+        font-size: 16px !important;
+        text-decoration: none;
+        color: #FF4757;
+    }
+
+    /* Header */
+    header h1 {
+        font-size: 55px !important;
+        letter-spacing: 4px !important;
+    }
+
+    /* Container — 3 columns */
+    #container {
+        gap: 18px;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    /* Boxes */
+    .box {
+        width: 180px !important;
+        height: 300px !important;
+    }
+
+    /* Footer */
+    footer > div:first-child {
+        max-width: 100% !important;
+    }
+}
+
+/* ===== MOBILE — 480px to 767px ===== */
+@media (max-width: 767px) {
+
+    /* Navbar */
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .navbar ul {
+        gap: 12px;
+    }
+
+    .navbar ul a {
+        font-size: 14px !important;
+        text-decoration: none;
+        color: #FF4757;
+    }
+
+    /* Header */
+    header h1 {
+        font-size: 42px !important;
+        letter-spacing: 2px !important;
+    }
+
+    /* Container — 2 columns */
+    #container {
+        gap: 12px;
+        padding: 12px;
+    }
+
+    /* Boxes — 2 column */
+    .box {
+        width: calc(50% - 12px) !important;
+        height: 220px !important;
+        flex-shrink: 1 !important;
+    }
+
+    /* About */
+    .about-container {
+        margin: 15px 10px;
+        padding: 18px;
+    }
+
+    /* Footer stack */
+    footer .flex-wrap {
+        flex-direction: column;
+    }
+}
+
+/* ===== SMALL MOBILE — 480px se kam ===== */
+@media (max-width: 480px) {
+
+    header h1 {
+        font-size: 32px !important;
+        letter-spacing: 1px !important;
+    }
+
+    .navbar ul a {
+        font-size: 12px !important;
+    }
+
+    .box {
+        width: calc(50% - 8px) !important;
+        height: 190px !important;
+    }
+
+    #container {
+        gap: 8px;
+        padding: 8px;
+    }
+}

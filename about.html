@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About LX.11</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+    <style>
+        .side-menu { border-right: 2px solid #FF4757 !important; }
+        .cat-dropdown {
+            width: 100%; padding: 10px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,71,87,0.5);
+            border-radius: 8px; color: #cccccc;
+            font-size: 14px; outline: none; cursor: pointer; margin-top: 5px;
+        }
+        .cat-dropdown option { background: #1a1a1a; color: white; }
+        .side-menu-label { color: white; padding: 10px; display: block; font-size: 15px; }
+        .side-menu li { list-style: none; padding: 5px 0; }
+    </style>
+</head>
+<body>
+
+<!-- ===== SIDE MENU ===== -->
+<div id="sideMenu" class="side-menu">
+    <div onclick="toggleMenu()" style="position: absolute; top: 15px; right: 15px; font-size: 28px; color: white; cursor: pointer; font-weight: bold;">×</div>
+    <ul style="margin-top: 10px;">
+        <li>
+            <span class="side-menu-label">● Categories</span>
+            <select class="cat-dropdown" onchange="goToCategory(this.value)">
+                <option value="">-- Select --</option>
+                <option value="nature.html">● Nature</option>
+                <option value="space.html">● Space</option>
+                <option value="cartoon.html">● Cartoon</option>
+                <option value="aesthetic.html">●aeshetic</option>
+            </select>
+        </li>
+        <li><a href="index.html">● Home</a></li>
+        <li><a href="about.html">● About</a></li>
+        <li><a href="contact.html">● Contact</a></li>
+    </ul>
+</div>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar">
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+    <!-- NAVBAR SVG — IDs: aboutNav -->
+    <svg width="200" height="70" viewBox="0 0 200 70" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="redGradAboutNav" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:#FF4757;stop-opacity:1" />
+          <stop offset="100%" style="stop-color:#ff0000;stop-opacity:1" />
+        </linearGradient>
+        <filter id="glowAboutNav">
+          <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+          <feMerge>
+            <feMergeNode in="coloredBlur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <text x="5" y="52" font-family="Georgia, serif" font-size="55" font-weight="bold" fill="url(#redGradAboutNav)" filter="url(#glowAboutNav)" font-style="italic">L</text>
+      <path d="M 8 56 Q 30 65 52 57" stroke="#FF4757" stroke-width="2.5" fill="none" stroke-linecap="round" filter="url(#glowAboutNav)"/>
+      <line x1="48" y1="12" x2="78" y2="52" stroke="url(#redGradAboutNav)" stroke-width="5" stroke-linecap="round" filter="url(#glowAboutNav)"/>
+      <line x1="78" y1="12" x2="48" y2="52" stroke="url(#redGradAboutNav)" stroke-width="5" stroke-linecap="round" filter="url(#glowAboutNav)"/>
+      <line x1="59" y1="29" x2="66" y2="34" stroke="black" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="92" cy="48" r="4" fill="#FF4757" filter="url(#glowAboutNav)"/>
+      <text x="100" y="52" font-family="'Cinzel Decorative', Georgia, serif" font-size="38" font-weight="bold" fill="url(#redGradAboutNav)" filter="url(#glowAboutNav)">11</text>
+    </svg>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- ===== HEADER ===== -->
+<header>
+    <h1 style="
+    font-family: 'Cinzel Decorative', cursive;
+    color: #FF4757;
+    text-align: center;
+    font-size: 58px;
+    letter-spacing: 3px;
+    text-shadow: 0 0 15px rgba(255,71,87,0.6);">Lumix.11</h1>
+</header>
+
+<!-- ===== ABOUT CONTENT ===== -->
+<div class="about-container">
+    <h2>About LUMIX.11</h2>
+    <p>Welcome to <strong>LUMIX.11</strong>, your ultimate destination for high-quality, curated wallpapers. As a Computer Science student, I created this space to combine my love for design with clean, functional code.</p>
+
+    <h3>Why LUMIX.11?</h3>
+    <ul>
+        <li><strong>Minimalist Design:</strong> Focused on aesthetics without the clutter.</li>
+        <li><strong>High Resolution:</strong> Every wallpaper is hand-picked for clarity.</li>
+        <li><strong>User-Centric:</strong> A smooth, dark-mode experience tailored for your screens.</li>
+    </ul>
+
+    <p>My goal is to provide a seamless gallery experience where you can find the perfect background to match your style. I hope i can fulfill your demands. As i am a developer,i only focus on how can i create things that can help you. Thank you for visiting my website. </p>
+
+    <a href="index.html" class="back-btn" style="text-decoration:none; color:white;">Back to Home</a>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer style="background: rgba(0,0,0,0.9); border-top: 2px solid #FF4757; padding: 30px 20px 15px 20px; margin-top: 40px; font-family: Arial, sans-serif;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 25px; max-width: 700px; margin: 0 auto; padding-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.1);">
+
+        <div style="min-width: 140px;">
+            <!-- FOOTER BIG LOGO SVG — IDs: aboutFooter -->
+            <svg width="200" height="70" viewBox="0 0 200 70" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="redGradAboutFooter" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color:#FF4757;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#ff0000;stop-opacity:1" />
+                </linearGradient>
+                <filter id="glowAboutFooter">
+                  <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+                  <feMerge>
+                    <feMergeNode in="coloredBlur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                  </feMerge>
+                </filter>
+              </defs>
+              <text x="5" y="52" font-family="Georgia, serif" font-size="55" font-weight="bold" fill="url(#redGradAboutFooter)" filter="url(#glowAboutFooter)" font-style="italic">L</text>
+              <path d="M 8 56 Q 30 65 52 57" stroke="#FF4757" stroke-width="2.5" fill="none" stroke-linecap="round" filter="url(#glowAboutFooter)"/>
+              <line x1="48" y1="12" x2="78" y2="52" stroke="url(#redGradAboutFooter)" stroke-width="5" stroke-linecap="round" filter="url(#glowAboutFooter)"/>
+              <line x1="78" y1="12" x2="48" y2="52" stroke="url(#redGradAboutFooter)" stroke-width="5" stroke-linecap="round" filter="url(#glowAboutFooter)"/>
+              <line x1="59" y1="29" x2="66" y2="34" stroke="black" stroke-width="7" stroke-linecap="round"/>
+              <circle cx="92" cy="48" r="4" fill="#FF4757" filter="url(#glowAboutFooter)"/>
+              <text x="100" y="52" font-family="'Cinzel Decorative', Georgia, serif" font-size="38" font-weight="bold" fill="url(#redGradAboutFooter)" filter="url(#glowAboutFooter)">11</text>
+            </svg>
+            <p style="color: #aaaaaa; font-size: 17px; margin: 0; line-height: 1.6;">Because your screen deserves something beautiful every day</p>
+        </div>
+
+        <div style="min-width: 100px;">
+            <h4 style="color: #FF4757; font-size: 14px; margin: 0 0 10px 0;">Quick Links</h4>
+            <ul style="list-style: none; padding: 0; margin: 0;">
+                <li style="margin-bottom: 7px;"><a href="index.html" style="color: #cccccc; text-decoration: none; font-size: 13px;">🏠 Home</a></li>
+                <li style="margin-bottom: 7px;"><a href="about.html" style="color: #cccccc; text-decoration: none; font-size: 13px;">👩‍💻 About</a></li>
+                <li style="margin-bottom: 7px;"><a href="contact.html" style="color: #cccccc; text-decoration: none; font-size: 13px;">📬 Contact</a></li>
+            </ul>
+        </div>
+
+        <div style="min-width: 100px;">
+            <h4 style="color: #FF4757; font-size: 14px; margin: 0 0 10px 0;">Categories</h4>
+            <ul style="list-style: none; padding: 0; margin: 0;">
+                <li style="margin-bottom: 7px;"><a href="nature.html" style="color: #cccccc; text-decoration: none; font-size: 13px;">● Nature</a></li>
+                <li style="margin-bottom: 7px;"><a href="space.html" style="color: #cccccc; text-decoration: none; font-size: 13px;">● Space</a></li>
+                <li style="margin-bottom: 7px;"><a href="cartoon.html" style="color: #cccccc; text-decoration: none; font-size: 13px;">● Cartoon</a></li>
+                <li style="margin-bottom: 7px;"><a href="aesthetic.html" style="color: #cccccc; text-decoration: none; font-size: 13px;">● Aesthetic</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div style="max-width: 700px; margin: 15px auto 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px;">
+        <div style="display: flex; gap: 12px;">
+            <a href="#" style="display: inline-block; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,71,87,0.4); border-radius: 8px; padding: 7px 12px; color: white; text-decoration: none; font-size: 16px;">📸</a>
+            <a href="#" style="display: inline-block; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,71,87,0.4); border-radius: 8px; padding: 7px 12px; color: white; text-decoration: none; font-size: 16px;">📌</a>
+            <a href="#" style="display: inline-block; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,71,87,0.4); border-radius: 8px; padding: 7px 12px; color: white; text-decoration: none; font-size: 16px;">💬</a>
+        </div>
+
+        <!-- FOOTER SMALL LOGO SVG — IDs: aboutCopy -->
+        <p style="color: #666666; font-size: 11px; margin: 0; display: flex; align-items: center; gap: 4px;">
+        © 2025
+        <svg width="80" height="28" viewBox="0 0 200 70" style="vertical-align: middle;" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="redGradAboutCopy" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#FF4757;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#ff0000;stop-opacity:1" />
+            </linearGradient>
+            <filter id="glowAboutCopy">
+              <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+              <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+          </defs>
+          <text x="5" y="52" font-family="Georgia, serif" font-size="55" font-weight="bold" fill="url(#redGradAboutCopy)" filter="url(#glowAboutCopy)" font-style="italic">L</text>
+          <path d="M 8 56 Q 30 65 52 57" stroke="#FF4757" stroke-width="2.5" fill="none" stroke-linecap="round" filter="url(#glowAboutCopy)"/>
+          <line x1="48" y1="12" x2="78" y2="52" stroke="url(#redGradAboutCopy)" stroke-width="5" stroke-linecap="round" filter="url(#glowAboutCopy)"/>
+          <line x1="78" y1="12" x2="48" y2="52" stroke="url(#redGradAboutCopy)" stroke-width="5" stroke-linecap="round" filter="url(#glowAboutCopy)"/>
+          <line x1="59" y1="29" x2="66" y2="34" stroke="black" stroke-width="7" stroke-linecap="round"/>
+          <circle cx="92" cy="48" r="4" fill="#FF4757" filter="url(#glowAboutCopy)"/>
+          <text x="100" y="52" font-family="Georgia, serif" font-size="38" font-weight="bold" fill="url(#redGradAboutCopy)" filter="url(#glowAboutCopy)">11</text>
+        </svg>
+        — All rights reserved</p>
+    </div>
+</footer>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById("sideMenu");
+        menu.style.width = (menu.style.width === "250px") ? "0" : "250px";
+    }
+
+    function goToCategory(page) {
+        if (page !== "") window.location.href = page;
+    }
+
+    document.addEventListener('click', function(e) {
+        var menu = document.getElementById("sideMenu");
+        var menuBtn = document.querySelector(".menu-btn");
+        if (menu.style.width === "250px" &&
+            !menu.contains(e.target) &&
+            !menuBtn.contains(e.target)) {
+            menu.style.width = "0";
+        }
+    });
+</script>
+
+</body>
+</html>

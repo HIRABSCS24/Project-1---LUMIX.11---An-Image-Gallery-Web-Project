@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aesthetic Wallpapers - LX.11</title>
+    <link rel="stylesheet" href="style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+    <style>
+        .side-menu { border-right: 2px solid #FF4757 !important; }
+        .cat-dropdown {
+            width: 100%; padding: 10px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,71,87,0.5);
+            border-radius: 8px; color: #cccccc;
+            font-size: 14px; outline: none; cursor: pointer; margin-top: 5px;
+        }
+        .cat-dropdown option { background: #1a1a1a; color: white; }
+        .side-menu-label { color: white; padding: 10px; display: block; font-size: 15px; }
+        .side-menu li { list-style: none; padding: 5px 0; }
+        .page-title { text-align: center; color: #FF4757; font-size: 22px; margin: 15px 0 5px 0; font-style: italic; }
+        .page-subtitle { text-align: center; color: #cccccc; font-size: 13px; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+<div id="sideMenu" class="side-menu">
+    <div onclick="toggleMenu()" style="position: absolute; top: 15px; right: 15px; font-size: 28px; color: white; cursor: pointer; font-weight: bold;">×</div>
+    <ul style="margin-top: 10px;">
+        <li>
+            <span class="side-menu-label">● Categories</span>
+            <select class="cat-dropdown" onchange="goToCategory(this.value)">
+                <option value="">-- Select --</option>
+                <option value="nature.html">● Nature</option>
+                <option value="space.html">● Space</option>
+                <option value="cartoon.html">● Cartoon</option>
+                <option value="aesthetic.html" selected>● Aesthetic</option>
+            </select>
+        </li>
+        <li><a href="index.html">● Home</a></li>
+        <li><a href="about.html">● About</a></li>
+        <li><a href="contact.html">● Contact</a></li>
+    </ul>
+</div>
+
+<nav class="navbar">
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+   <svg width="200" height="70" viewBox="0 0 200 70" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF4757;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff0000;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Stylish L — bottom line extended aur curved -->
+  <text x="5" y="52"
+    font-family="Georgia, serif"
+    font-size="55"
+    font-weight="bold"
+    fill="url(#redGrad)"
+    filter="url(#glow)"
+    font-style="italic">L</text>
+
+  <!-- L extra stylish bottom line -->
+  <path d="M 8 56 Q 30 65 52 57"
+    stroke="#FF4757"
+    stroke-width="2.5"
+    fill="none"
+    stroke-linecap="round"
+    filter="url(#glow)"/>
+
+  <!-- Stylish X — cross style -->
+  <line x1="48" y1="12" x2="78" y2="52" stroke="url(#redGrad)" stroke-width="5" stroke-linecap="round" filter="url(#glow)"/>
+  <line x1="78" y1="12" x2="48" y2="52" stroke="url(#redGrad)" stroke-width="5" stroke-linecap="round" filter="url(#glow)"/>
+  <!-- X gap effect -->
+  <line x1="59" y1="29" x2="66" y2="34" stroke="black" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Dot separator -->
+  <circle cx="92" cy="48" r="4" fill="#FF4757" filter="url(#glow)"/>
+
+  <!-- .11 text -->
+  <text x="100" y="52"
+    font-family="'Cinzel Decorative', Georgia, serif"
+    font-size="38"
+    font-weight="bold"
+    fill="url(#redGrad)"
+    filter="url(#glow)">11</text>
+
+</svg>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- ===== HEADER ===== -->
+<header>
+    <h1 style="
+    font-family: 'Cinzel Decorative', cursive;
+    color: #FF4757;
+    text-align: center;
+    font-size: 58px;
+    letter-spacing: 3px;
+    text-shadow: 0 0 15px rgba(255,71,87,0.6);">Lumix.11</h1>
+</header>
+
+<p class="page-title">Aesthetic Wallpapers section</p>
+<p class="page-subtitle">Dreamy, soft & beautiful vibes</p>
+
+
+<!-- Wallpapers boxes-->
+<div id="container">
+
+<div id="box45" class="box" data-image="imgaesthetic45.jpg">
+        <div class="actions">
+            <button class="btn-download" onclick="downloadImage('imgspace45.jpg', 'wallpaper45.jpg')">Download</button>
+            <span class="heart-icon">❤️</span>
+        </div>
+    </div>
+
+<div id="box46" class="box" data-image="img46.jpg">
+        <div class="actions">
+            <button class="btn-download" onclick="downloadImage('img46.jpg', 'wallpaper46.jpg')">Download</button>
+            <span class="heart-icon">❤️</span>
+        </div>
+    </div>
+
+    <div id="box47" class="box" data-image="img47.jpg">
+        <div class="actions">
+            <button class="btn-download" onclick="downloadImage('img47.jpg', 'wallpaper47.jpg')">Download</button>
+            <span class="heart-icon">❤️</span>
+        </div>
+    </div>
+
+    <div id="box48" class="box" data-image="img48.jpg">
+        <div class="actions">
+            <button class="btn-download" onclick="downloadImage('img48.jpg', 'wallpaper48.jpg')">Download</button>
+            <span class="heart-icon">❤️</span>
+        </div>
+    </div>
+
+    <div id="box49" class="box" data-image="img49.jpg">
+        <div class="actions">
+            <button class="btn-download" onclick="downloadImage('img49.jpg', 'wallpaper49.jpg')">Download</button>
+            <span class="heart-icon">❤️</span>
+        </div>
+    </div>
+
+    <div id="box50" class="box" data-image="img50.jpg">
+        <div class="actions">
+            <button class="btn-download" onclick="downloadImage('img50.jpg', 'wallpaper50.jpg')">Download</button>
+            <span class="heart-icon">❤️</span>
+        </div>
+    </div>
+
+    <div id="box51" class="box" data-image="img51.jpg">
+        <div class="actions">
+            <button class="btn-download" onclick="downloadImage('img51.jpg', 'wallpaper51.jpg')">Download</button>
+            <span class="heart-icon">❤️</span>
+        </div>
+    </div>
+
+    <div id="box52" class="box" data-image="img52.jpg">
+        <div class="actions">
+            <button class="btn-download" onclick="downloadImage('img52.jpg', 'wallpaper52.jpg')">Download</button>
+            <span class="heart-icon">❤️</span>
+        </div>
+    </div>
+
+    <div id="box53" class="box" data-image="img53.jpg">
+        <div class="actions">
+            <button class="btn-download" onclick="downloadImage('img53.jpg', 'wallpaper53.jpg')">Download</button>
+            <span class="heart-icon">❤️</span>
+        </div>
+    </div>
+
+    <div id="box54" class="box" data-image="img54.jpg">
+        <div class="actions">
+            <button class="btn-download" onclick="downloadImage('img54.jpg', 'wallpaper54.jpg')">Download</button>
+            <span class="heart-icon">❤️</span>
+        </div>
+    </div>
+
+    <div id="box55" class="box" data-image="img55.jpg">
+        <div class="actions">
+            <button class="btn-download" onclick="downloadImage('img55.jpg', 'wallpaper55.jpg')">Download</button>
+            <span class="heart-icon">❤️</span>
+        </div>
+    </div>
+
+    <div id="box56" class="box" data-image="img56.jpg">
+        <div class="actions">
+            <button class="btn-download" onclick="downloadImage('img56.jpg', 'wallpaper56.jpg')">Download</button>
+            <span class="heart-icon">❤️</span>
+        </div>
+    </div>
+</div>
+
+
+<div style="text-align: center; margin: 20px 0 40px 0;">
+    <a href="index.html" style="color: white; text-decoration: none; font-size: 14px;">← Back to Home</a>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer style="
+    background: rgba(0,0,0,0.9);
+    border-top: 2px solid #FF4757;
+    padding: 30px 20px 15px 20px;
+    margin-top: 40px;
+    font-family: Arial, sans-serif;
+">
+
+    <!-- Footer Top 3 columns -->
+    <div style="
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 25px;
+        max-width: 700px;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    ">
+
+        <!-- Column 1: Logo + Tagline -->
+            <div style="min-width: 140px;">
+            <svg width="200" height="70" viewBox="0 0 200 70" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF4757;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff0000;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Stylish L — bottom line extended aur curved -->
+  <text x="5" y="52"
+    font-family="Georgia, serif"
+    font-size="55"
+    font-weight="bold"
+    fill="url(#redGrad)"
+    filter="url(#glow)"
+    font-style="italic">L</text>
+
+  <!-- L extra stylish bottom line -->
+  <path d="M 8 56 Q 30 65 52 57"
+    stroke="#FF4757"
+    stroke-width="2.5"
+    fill="none"
+    stroke-linecap="round"
+    filter="url(#glow)"/>
+
+  <!-- Stylish X — cross style -->
+  <line x1="48" y1="12" x2="78" y2="52" stroke="url(#redGrad)" stroke-width="5" stroke-linecap="round" filter="url(#glow)"/>
+  <line x1="78" y1="12" x2="48" y2="52" stroke="url(#redGrad)" stroke-width="5" stroke-linecap="round" filter="url(#glow)"/>
+  <!-- X gap effect -->
+  <line x1="59" y1="29" x2="66" y2="34" stroke="black" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Dot separator -->
+  <circle cx="92" cy="48" r="4" fill="#FF4757" filter="url(#glow)"/>
+
+  <!-- .11 text -->
+  <text x="100" y="52"
+    font-family="'Cinzel Decorative', Georgia, serif"
+    font-size="38"
+    font-weight="bold"
+    fill="url(#redGrad)"
+    filter="url(#glow)">11</text>
+
+</svg>
+            
+            <p style="color: #aaaaaa; font-size: 17px; margin: 0; line-height: 1.6;">Because your screen deserves
+something beautiful every day</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div style="min-width: 100px;">
+            <h4 style="color: #FF4757; font-size: 14px; margin: 0 0 10px 0;">Quick Links</h4>
+            <ul style="list-style: none; padding: 0; margin: 0;">
+                <li style="margin-bottom: 7px;"><a href="index.html" style="color: #cccccc; text-decoration: none; font-size: 13px;">🏠 Home</a></li>
+                <li style="margin-bottom: 7px;"><a href="about.html" style="color: #cccccc; text-decoration: none; font-size: 13px;">👩‍💻 About</a></li>
+                <li style="margin-bottom: 7px;"><a href="contact.html" style="color: #cccccc; text-decoration: none; font-size: 13px;">📬 Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Categories -->
+        <div style="min-width: 100px;">
+            <h4 style="color: #FF4757; font-size: 14px; margin: 0 0 10px 0;">Categories</h4>
+            <ul style="list-style: none; padding: 0; margin: 0;">
+                <li style="margin-bottom: 7px;"><a href="nature.html" style="color: #cccccc; text-decoration: none; font-size: 13px;">● Nature</a></li>
+                <li style="margin-bottom: 7px;"><a href="space.html" style="color: #cccccc; text-decoration: none; font-size: 13px;">● Space</a></li>
+                <li style="margin-bottom: 7px;"><a href="cartoon.html" style="color: #cccccc; text-decoration: none; font-size: 13px;">● Cartoon</a></li>
+                <li style="margin-bottom: 7px;"><a href="aesthetic.html" style="color: #cccccc; text-decoration: none; font-size: 13px;">● Aesthetic</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Footer Bottom: Social + Copyright -->
+    <div style="
+        max-width: 700px;
+        margin: 15px auto 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    ">
+
+        <!-- Social Icons -->
+        <div style="display: flex; gap: 12px;">
+            <a href="#" style="
+                display: inline-block;
+                background: rgba(255,255,255,0.07);
+                border: 1px solid rgba(255,71,87,0.4);
+                border-radius: 8px;
+                padding: 7px 12px;
+                color: white;
+                text-decoration: none;
+                font-size: 16px;
+            ">📸</a>
+
+            <a href="#" style="
+                display: inline-block;
+                background: rgba(255,255,255,0.07);
+                border: 1px solid rgba(255,71,87,0.4);
+                border-radius: 8px;
+                padding: 7px 12px;
+                color: white;
+                text-decoration: none;
+                font-size: 16px;
+            ">📌</a>
+
+            <a href="#" style="
+                display: inline-block;
+                background: rgba(255,255,255,0.07);
+                border: 1px solid rgba(255,71,87,0.4);
+                border-radius: 8px;
+                padding: 7px 12px;
+                color: white;
+                text-decoration: none;
+                font-size: 16px;
+            ">💬</a>
+        </div>
+
+   <!-- Copyright -->
+        <p style="color: #666666; font-size: 11px; margin: 0;">
+        © 2025 <svg width="80" height="28" viewBox="0 0 200 70" 
+style="vertical-align: middle;"
+xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="redGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF4757;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff0000;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <text x="5" y="52" font-family="Georgia, serif" font-size="55" font-weight="bold" fill="url(#redGrad2)" filter="url(#glow2)" font-style="italic">L</text>
+  <path d="M 8 56 Q 30 65 52 57" stroke="#FF4757" stroke-width="2.5" fill="none" stroke-linecap="round" filter="url(#glow2)"/>
+  <line x1="48" y1="12" x2="78" y2="52" stroke="url(#redGrad2)" stroke-width="5" stroke-linecap="round" filter="url(#glow2)"/>
+  <line x1="78" y1="12" x2="48" y2="52" stroke="url(#redGrad2)" stroke-width="5" stroke-linecap="round" filter="url(#glow2)"/>
+  <line x1="59" y1="29" x2="66" y2="34" stroke="black" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="92" cy="48" r="4" fill="#FF4757" filter="url(#glow2)"/>
+  <text x="100" y="52" font-family="Georgia, serif" font-size="38" font-weight="bold" fill="url(#redGrad2)" filter="url(#glow2)">11</text>
+</svg> — All rights reserved
+        </p>
+    </div>
+</footer>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById("sideMenu");
+        menu.style.width = (menu.style.width === "250px") ? "0" : "250px";
+    }
+    function goToCategory(page) {
+        if (page !== "") window.location.href = page;
+    }
+    function downloadImage(url, filename) {
+        fetch(url).then(r => r.blob()).then(blob => {
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = filename;
+            link.click();
+        }).catch(console.error);
+    }
+    
+    // Heart toggle function
+document.querySelectorAll('.heart-icon').forEach(function(heart) {
+    heart.style.filter = 'grayscale(100%)';
+    heart.style.cursor = 'pointer';
+    heart.style.transition = 'all 0.2s';
+});
+
+document.querySelectorAll('.heart-icon').forEach(function(heart) {
+    heart.addEventListener('click', function(e) {
+        e.stopPropagation();
+        if (this.style.filter === 'grayscale(100%)') {
+            this.style.filter = 'grayscale(0%)';
+            this.style.transform = 'scale(1.3)';
+            var self = this;
+            setTimeout(function() {
+                self.style.transform = 'scale(1)';
+            }, 200);
+        } else {
+            this.style.filter = 'grayscale(100%)';
+        }
+    });
+});
+    
+    document.addEventListener('click', function(e) {
+        var menu = document.getElementById("sideMenu");
+        var menuBtn = document.querySelector(".menu-btn");
+        if (menu.style.width === "250px" && !menu.contains(e.target) && !menuBtn.contains(e.target)) {
+            menu.style.width = "0";
+        }
+    });
+</script>
+
+</body>
+</html>
