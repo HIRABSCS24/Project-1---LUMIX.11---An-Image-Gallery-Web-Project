@@ -10,12 +10,12 @@ from scratch using HTML, CSS and JavaScript.
 -  Dark Theme with Glass UI Effect
 -  Hamburger Side Menu
 
-## 🛠️ Technologies Used
+# Technologies Used
 - HTML5
 - CSS3
 - JavaScript (Vanilla)
 
-## 📂 Pages
+## Pages
 - Home Page
 - About Page
 - Contact Page
