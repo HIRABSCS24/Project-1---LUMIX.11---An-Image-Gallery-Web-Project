@@ -24,6 +24,7 @@ from scratch using HTML, CSS and JavaScript.
 # Live Demo (link of my web project below)
 https://hirabscs24.github.io/Project-1---LUMIX.11---An-Image-Gallery-Web-Project/
 
+
 # Author
-HIRA NAZ — A 4rth smester BS Computer Science Student at BNBWU.This is my first complete web project and i used HTML, CSS and little bit javascript for some functonilty like downloadind, heart tooggle etc . i was very excited to publish it and i know i might not created something special buti tried and started creating something.i want to solve people problems  with my skills . i hope i will create something big to solve people problem and be a good developer. thank u so much for reading my story . stay tune for next project 
+HIRA NAZ — A 4rth semester BS Computer Science Student at BNBWU.This is my first complete web project and i used HTML, CSS and little bit javascript for some functonilty like downloadind, heart tooggle etc . i was very excited to publish it and i know i might not created something special buti tried and started creating something.i want to solve people problems  with my skills . i hope i will create something big to solve people problem and be a good developer. thank u so much for reading my story . stay tune for next project 
  
